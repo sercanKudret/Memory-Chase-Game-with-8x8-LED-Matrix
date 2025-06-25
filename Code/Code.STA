@@ -1,0 +1,78 @@
+
+ROM used:   1352/8192 (17%)
+            1352/8192 (17%) including unused fragments
+
+            0.3 Average locations per line
+            1.7 Average locations per statement
+
+RAM used:   110/368 (30%) at main() level
+            129/368 (35%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  291   148  18  Code.c
+  661     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
+   37     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h
+  423     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   32     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+   28     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+ 1351   359  45  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
+  154     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\time.h
+  326   128  16  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlibm.h
+   76    13   2  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\memmgmt.c
+  435   157  20  MAX7219.c
+  326     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\STDLIBM.H
+----- -----
+ 4140   805 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+ Inline        13             @MUL3232
+0    161  12    4   101  3.8  rand
+ Inline         5             @DIV1616
+ Inline         4    39  2.1  srand
+0     21   2    1             @delay_ms1
+ Inline         4   592  4.1  concat
+ Inline         4   913  6.7  reverse
+0     34   3    6             @WRITEBITA
+0     27   2    5             @READBITA
+0    195  14    6   565  6.0  display
+ Inline         1   335  3.8  display_init
+ Inline         0    48  1.1  buzz
+0     87   6    4   519  5.8  send_data
+0    107   8    0   258  1.9  settingsPorts
+0     33   2    2   168  4.4  turn_off_all_leds
+0     35   3    5   149  4.0  turn_on_led
+0     36   3    5   160  4.5  turn_off_led
+0    176  13    2  1074  8.6  generateRandomLEDs
+0     51   4    2   251  5.5  check_selected_leds
+0     36   3    3   244  7.1  is_selected
+0    254  19    2  1708  6.9  playerMovement
+0     95   7    0   181  2.6  MAIN
+ Inline         0   236  2.6  @cinit1
+
+Program metrics:
+    Functions               18
+    Statements              805
+    Comments                1034
+    Volume (V)              12446
+    Difficulty (D)          81.6
+    Effort to implement (E) 1016157
+    Time to implement (T)   15 hours, 41 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   35
+    Maintainability (MI)    38
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1348  696  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

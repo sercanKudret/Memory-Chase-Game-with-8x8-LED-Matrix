@@ -1,0 +1,8 @@
+>>> Warning 203 "Code.c" Line 127(1,1): Condition always TRUE
+>>> Warning 202 "Code.c" Line 103(18,25): Variable never used:   LED_OFF
+>>> Warning 202 "Code.c" Line 118(18,24): Variable never used:   LED_ON
+>>> Warning 202 "Code.c" Line 124(8,16): Variable never used:   selected
+>>> Warning 202 "Code.c" Line 126(8,12): Variable never used:   dizi
+      Memory usage:   ROM=5%      RAM=9% - 46%
+      0 Errors,  5 Warnings.
+Build Successful.

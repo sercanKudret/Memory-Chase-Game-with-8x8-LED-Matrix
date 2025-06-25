@@ -1,0 +1,182 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+004-005 @MEMSET.P3
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-027 __DYNAMIC_HEAD
+028     cur_scroll_position
+029-02A cur_letter_position
+02B-02C cur_letter_end_position
+02D     temp_char_spacing
+02E-02F scroll_chars
+030-037 cur_char_data
+038     scroll_text_len
+039.0   nd
+03A     pos1
+03B-042 led_matrix
+043     level
+044-063 randLEDs
+064     selected_led_count
+065     isItPLAYERsTurn
+066     row
+067     column
+077     @SCRATCH
+077     @MEMSET.P1
+078     @SCRATCH
+078     _RETURN_
+078     @MEMSET.P1
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+0A0-0BF selected_leds
+0C0     display_init.decode
+0C0     generateRandomLEDs.j
+0C0     check_selected_leds.i
+0C0     is_selected.row
+0C0     turn_off_all_leds.row
+0C0     playerMovement.@SCRATCH1
+0C1     is_selected.column
+0C1     generateRandomLEDs.a
+0C1     display.adresse
+0C1     turn_off_all_leds.@SCRATCH1
+0C1     check_selected_leds.@SCRATCH1
+0C1     playerMovement.@SCRATCH2
+0C2     display.dis_data
+0C2     generateRandomLEDs.b
+0C2     is_selected.i
+0C2     turn_off_all_leds.@SCRATCH2
+0C2     check_selected_leds.@SCRATCH2
+0C3     generateRandomLEDs.positionAlreadySelected
+0C3     display.x
+0C3     is_selected.@SCRATCH1
+0C4     generateRandomLEDs.k
+0C4-0C5 display.dout
+0C5     generateRandomLEDs.i
+0C6     @delay_ms1.P1
+0C6     reverse.nd_data
+0C6-0C9 srand.seed
+0C6     concat.d1
+0C6-0C9 @MUL3232.P1
+0C6     rand.@SCRATCH1
+0C6     display.@SCRATCH1
+0C6     generateRandomLEDs.@SCRATCH1
+0C7     reverse.D
+0C7     concat.d2
+0C7     rand.@SCRATCH2
+0C7     generateRandomLEDs.@SCRATCH2
+0C8     turn_off_led.row
+0C8     reverse.i
+0C8     turn_on_led.row
+0C8-0C9 concat.temp
+0C8     rand.@SCRATCH3
+0C9     turn_on_led.column
+0C9-0CA @DIV1616.P1
+0C9     turn_off_led.column
+0C9     reverse.temp
+0C9     rand.@SCRATCH4
+0CA-0CD @MUL3232.P1
+0CA     @READBITA.P2
+0CA     @WRITEBITA.P3
+0CA     turn_on_led.@SCRATCH1
+0CA     turn_off_led.@SCRATCH1
+0CB-0CC @DIV1616.P1
+0CB     @WRITEBITA.P2
+0CB     send_data.address
+0CB-0CC @READBITA.P1
+0CB     turn_on_led.@SCRATCH2
+0CB     turn_off_led.@SCRATCH2
+0CC-0CD @WRITEBITA.P1
+0CC     send_data.data
+0CC     turn_on_led.@SCRATCH3
+0CC     turn_off_led.@SCRATCH3
+0CD     send_data.i
+0CD     @DIV1616.@SCRATCH1
+0CE     @MUL3232.@SCRATCH1
+0CE     send_data.@SCRATCH1
+0CF     @MUL3232.@SCRATCH2
+0D0     @MUL3232.@SCRATCH3
+0D1     @MUL3232.@SCRATCH4
+0D2     @MUL3232.@SCRATCH5
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+FC6     SSPCON1
+FC6.5   SSPEN
+
+ROM Allocation:
+000004  @WRITEBITA
+000026  @READBITA
+000041  display
+00004B  reverse
+0000A5  concat
+000104  send_data
+00015B  settingsPorts
+00015D  display_init
+0001C6  turn_off_all_leds
+0001E7  rand
+0001FE  @MUL3232
+00025E  @DIV1616
+000288  @delay_ms1
+00029D  turn_on_led
+0002C0  turn_off_led
+0002E4  generateRandomLEDs
+0002EC  srand
+000394  is_selected
+0003B8  check_selected_leds
+0003EB  playerMovement
+0004CD  buzz
+0004E9  MAIN
+0004E9  @cinit1
+0004FD  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\Sercan\Desktop\Training Kit\Code\
+
+Project Files:
+    Code.c                                                  [28-Kas-23 06:39  CRC=1086A8BD]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [21-Haz-13 16:04  CRC=4E65664C]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h [31-Tem-07 13:24  CRC=4E4534F4]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [14-Tem-11 10:13  CRC=23EDEC8F]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-Tem-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-Oca-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [08-Haz-11 14:39  CRC=0B6669CF]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\time.h  [28-Aðu-12 11:05  CRC=A57CC8AD]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlibm.h [24-Þub-12 09:58  CRC=9523303D]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\memmgmt.c [24-Þub-12 09:47  CRC=E82E24A3]
+    MAX7219.c                                               [06-Kas-23 22:38  CRC=5F0C22BA]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\STDLIBM.H [24-Þub-12 09:58  CRC=9523303D]
+
+Source signature=3F422927
+
+Units:
+    Code (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   Code.xsym
+    Errors:      Code.err
+    Ext Symbols: Code.esym
+    INHX8:       Code.hex
+    Symbols:     Code.sym
+    List:        Code.lst
+    Debug/COFF:  Code.cof
+    Project:     Code.ccspjt
+    Call Tree:   Code.tre
+    Statistics:  Code.STA
